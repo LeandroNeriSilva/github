@@ -1,0 +1,88 @@
+GitHub
+
+
+
+Como lançar projeto no GitHub:
+
+- Ciramos no GitHub um novo repositorio
+	aplicamos nome e algumas config
+
+
+Com o repositorio criado vamos p/ o Git Bash
+
+- Vamos informar ao Git Bash quem é o user
+>>>>>>>git config --global user.name "username"
+
+- Caso necessario informamos o email
+>>>>>>>git config --global user.email email@email.com
+
+- Precisamos acessar a pasta ainda sem comandos git
+- Vamos considerar uma pasta 'projetos' no desktop
+>>>>>>>cd desktop
+>>>>>>>cd projetos
+
+- Dentro da pasta projetos criamos um repositorio do git
+>>>>>>>git init
+
+- Vamos indicar os arquivos a serem enviados ao GitHub
+- Vamos colocar o arquivo em um stage de preparação
+>>>>>>>git add nome_arquivo.extensao
+
+- Vamos verificar o status de cada arquivo
+- Vai retornar to be committed e Untracked files
+* To be committed: Aguardando p/ ser comitado
+* Untracked files: Arquivos não rastreados
+>>>>>>>git status
+
+- Para add varios arquivos usamos
+>>>>>>>git add *
+
+- Vamos conferir o status dos arq
+>>>>>>>git status
+
+- Caso queremos excluir os arq to be committed
+>>>>>>>git reset
+
+- Vamos adicionar o arq novamente e verificar o status
+* Git status não e obrigatorio mas e uma boa pratica
+>>>>>>>git add nome_arquivo.extensao
+>>>>>>>git status
+
+- Agora precisamos comitar o arq
+* Preparação dos arq para enviar ao servidor do GitHub
+>>>>>>>git commit -m "nome/descrição do commit"
+
+- Vamos identificar pra onde desejamos levar o projeto
+* Podemos usar SHIFT+INSERT para colar
+* Add no stage, comitamos agora informamos o diretorio
+>>>>>>>git remote add origin colamos o https do repositorio
+
+- Agora vamos enviar o arquivo ao GitHub
+* Usamos o branch principal master
+* Usamos -u como segurança p/ garantir a branch atual
+>>>>>>>git push -u origin master
+
+- Abrira uma janela solicitando autenticação
+* O arquivo constara no repositorio
+
+- Revisando
+* Config e loc pasta
+>>>>>>>git config --global user.name "username"
+>>>>>>>git config --global user.email email@email.com
+>>>>>>>cd desktop
+>>>>>>>cd projetos
+
+* Comandos git
+>>>>>>>git init
+>>>>>>>git add nome_arquivo.extensao
+>>>>>>>git status
+>>>>>>>git commit -m "nome/descrição do commit"
+>>>>>>>git remote add origin colamos o https do repositorio
+>>>>>>>git push -u origin master
+
+* A segunda vez nao necessita do remote add origin
+* Clicando no nome do commit é possivel verificar as alterações
+
+
+
+https://github.com/LeandroNeriSilva/GitHub.git
