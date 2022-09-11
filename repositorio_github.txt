@@ -82,7 +82,3 @@ Com o repositorio criado vamos p/ o Git Bash
 
 * A segunda vez nao necessita do remote add origin
 * Clicando no nome do commit é possivel verificar as alterações
-
-
-
-https://github.com/LeandroNeriSilva/GitHub.git
